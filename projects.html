@@ -2,44 +2,98 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Projetos | Gabriel Chiodi Ibanez</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sobre mim | Gabriel Chiodi Ibanez</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style rel='stylesheet'>
+    html { box-sizing: border-box; }
+    *, *:before, *:after { box-sizing: inherit; }
+    body { background: DarkSlateGray; }
+    .clear { clear: both; }
+    #all {
+      background: darkolivegreen;
+      width: 50%;
+      margin: 5% 25% 0;
+      border: 1px solid #000;
+      padding: 0;
+      font: 18px/1.4 "Noto Sans", sans-serif;
+      text-align: center;
+      color: #000;
+    }
+    .main-content {
+      background: DarkSeaGreen;
+      width: 80%;
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+    .sidebar {
+      background: DarkOliveGreen;
+      width: 19%;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      display: block;
+      color: black;
+    }
+    .sidebar ul { 
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .page-bottom {
+      clear: both;
+      background: DarkOliveGreen;
+    }
+  </style>
 </head>
-<body>
-  <aside class="sidebar">
-    <div>
-      <nav>
+<body class="about-me">
+  <div id="all">
+    <!--<header></header>-->
+    <main class="main-content">
+      <section class="main-top">
+      </section>
+    </main>
+    <div class="sidebar">
+      <nav class="assistant-sidebar">
         <ul>
+          <!--
           <li>
-	    <a href="index.html">Início</a>
-	  </li>
-	  <li>
+            <a href="index.html">Início</a>
+          </li>
+          -->
+          <li>
             <a href="projects.html">Meus Projetos</a>
-	  </li>
-	  <!--
-	  <li>
-	    <a href="articles.html">Meus Artigos</a>
-	  </li>
-	  -->
-	  <li>
-	    <a href="studies.html">Estudos e Leituras</a>
-	  </li>
-	  <!--
-	  <li>
-	    <a href="coffee-tips.html">Dicas sobre café</a>
-	  </li
-	  <li>
-	    <a href="wanna-coffee.html">Pague-me um café</a>
-	  </li>
-	  -->
-	  <li>
-	    <a href="about-me.html">Sobre mim</a>
-	  </li>
+          </li>
+          <!--
+          <li>
+            <a href="articles.html">Meus Artigos</a>
+          </li>
+          <li>
+            <a href="studies.html">Estudos e Leituras</a>
+          </li>
+          <li>
+            <a href="coffee-tips.html">Dicas sobre café</a>
+          </li>
+          <li>
+            <a href="wanna-coffee.html">Pague-me um café</a>
+          </li>
+          -->
+          <li>
+            <a href="about-me.html">Sobre mim</a>
+          </li>
         </ul>
       </nav>
     </div>
-  </aside>
+    <div class="clear"></div>
+    <div class="page-bottom">
+      <footer>
+        <small>Site pessoal de Gabriel Chiodi Ibanez - 2026 &copy; Todos os direitos reservados</small>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
+

@@ -10,30 +10,58 @@
     body { background: DarkSlateGray; }
     .clear { clear: both; }
     #all {
+      background: darkolivegreen;
       width: 50%;
-      margin: 0 auto;
-      border: 1px solid #0f0;
+      margin: 5% 25% 0;
+      border: 1px solid #000;
+      padding: 0;
       font: 18px/1.4 "Noto Sans", sans-serif;
       text-align: center;
-      color: #0f0;
+      color: #000;
     }
     .main-content {
       background: DarkSeaGreen;
       width: 80%;
       float: right;
+      margin: 0;
+      padding: 0;
+    }
+    #author-image {
+      width: 35%;
+      max-width: 500px;
+      float: right;
+    }
+    .contact {
+      width: 63%;
+      float: left;
+    }
+    .contact p {
+      text-align: start;
+      line-height: 1;
+    } 
+    .contact a {
+      text-decoration: none;
+      color: black;
     }
     .sidebar {
       background: DarkOliveGreen;
       width: 19%;
       float: left;
-    }
-    a { text-decoration: none; }
-    ul { 
-      list-style: none; 
-      padding: 0;
       margin: 0;
+      padding: 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      display: block;
+      color: black;
+    }
+    .sidebar ul { 
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
     .page-bottom {
+      clear: both;
       background: DarkOliveGreen;
     }
   </style>
@@ -42,6 +70,18 @@
   <div id="all">
     <!--<header></header>-->
     <main class="main-content">
+      <section class="main-top">
+        <img id="author-image" src="author_image.webp" alt="Foto do autor do site.">
+        <div class="contact">
+          <p>Gabriel Chiodi Ibanez</p>
+          <p>Email: gabrielmju@hotmail.com</p>
+          <p>GitHub: <a href="https://github.com/GabrielChiodiI" target="_blank">github.com/gabrielchiodii</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-chiodi-ibanez-343b2b358" target="_blank"/>www.linkedin.com/in/gabriel-chiodi-ibanez-343b2b358</a>
+          <p>Dourados - MS</p>
+          <p>Natural de Maracaju – MS, nascido em 2000 • 25 anos</p>
+        </div>
+        <div class="clear"></div>
+      </section>
       <h1>Só pra ter alguma coisa</h1>
     </main>
     <div class="sidebar">
@@ -75,6 +115,7 @@
         </ul>
       </nav>
     </div>
+    <div class="clear"></div>
     <div class="page-bottom">
       <footer>
         <small>Site pessoal de Gabriel Chiodi Ibanez - 2026 &copy; Todos os direitos reservados</small>
