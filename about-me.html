@@ -7,29 +7,47 @@
   <style rel='stylesheet'>
     html { box-sizing: border-box; }
     *, *:before, *:after { box-sizing: inherit; }
-    body { background: DarkSlateGray; }
+    /* Anotações sobre cores do documento - estilo noturno
+      cor principal - 3°cor mais escura - fundo do texto: #162719 verde 20%
+      cor secundária - cor mais clara, contraste com a principal - fonte e outros: #eae9f2 azul -90% , #e3efe5 verde -90%
+      cor 3 - cor mais escura - fundo maior: #080f09 verde 70%
+      cor 4 - 2° cor mais escura - fundo menor: #111d13 verde 40%
+      cor 5 - 4° cor mais escura - cor de realce: #192c1c verde 10%
+      cor 6 - cor para para bordas destaques: #423b68 azul 0%, #9890c0 azul -50%, #acd0b1 verde -70%, #acd3ef azul metal -70%
+    */
+    body { background: #080f09; } /*cor 3*/
     .clear { clear: both; }
     #all {
-      background: darkolivegreen;
-      width: 50%;
-      margin: 5% 25% 0;
-      border: 1px solid #000;
-      padding: 0;
-      font: 18px/1.4 "Noto Sans", sans-serif;
+      background: #111d13; /*cor 4*/
+      width: 65%;
+      max-width: 1248px; /*65% de 1920 - largura de tela full hd*/
+      min-width: 887.9px; /*65% de 1366 - largura de tela hd*/
+      height: 90vh;
+      margin: 10vh 17.5% 0; /*17.5 x 2 = 35 - centralizar a box*/
+      box-shadow: #423b68 0 0 10px 1px; /*cor 6*/
+      border: 5px solid #111d13; /*cor 4*/
+      border-radius: 2vmin;
+      padding: 1%;
+      font: 112%/1.2 "Noto Sans", sans-serif;
       text-align: center;
-      color: #000;
+      color: #eae9f2; /*cor secundária*/
     }
     .main-content {
-      background: DarkSeaGreen;
+      background: #162719; /*cor principal*/
       width: 80%;
       float: right;
       margin: 0;
-      padding: 0;
+      border: 5px solid #162719; /*cor principal*/
+      border-radius: 2vmin;
+      padding: 2%;
     }
     #author-image {
       width: 35%;
       max-width: 500px;
       float: right;
+      border: 5px solid none;
+      border-radius: 2vmin;
+      padding: 5% 0;
     }
     .contact {
       width: 63%;
@@ -41,19 +59,21 @@
     } 
     .contact a {
       text-decoration: none;
-      color: black;
+      color: #eae9f2; /*cor secundária*/
     }
     .sidebar {
-      background: DarkOliveGreen;
+      background: #162719; /*cor principal*/
       width: 19%;
       float: left;
       margin: 0;
+      border: 5px solid #162719; /*cor princpal*/
+      border-radius: 2vmin;
       padding: 0;
     }
     .sidebar a {
       text-decoration: none;
       display: block;
-      color: black;
+      color: #eae9f2; /*cor secundária*/
     }
     .sidebar ul { 
       list-style: none;
@@ -61,8 +81,8 @@
       padding: 0;
     }
     .page-bottom {
-      clear: both;
-      background: DarkOliveGreen;
+      background: #111d13; /*cor 4*/
+      border-radius: 2vmin;
     }
   </style>
 </head>
@@ -82,7 +102,7 @@
         </div>
         <div class="clear"></div>
       </section>
-      <h1>Só pra ter alguma coisa</h1>
+      <h1></h1>
     </main>
     <div class="sidebar">
       <nav class="assistant-sidebar">
