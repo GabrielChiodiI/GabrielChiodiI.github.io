@@ -2,15 +2,127 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre mim | Gabriel Chiodi Ibanez</title>
+  <title>Pague-me um café | Gabriel Chiodi Ibanez</title>
   <link rel="stylesheet" href="normalize.css">
+  <style rel='stylesheet'>
+    html { box-sizing: border-box; }
+    *, *:before, *:after { box-sizing: inherit; }
+    /* Anotações sobre cores do documento - estilo noturno
+      cor principal - 3°cor mais escura - fundo do texto: #162719 verde 20%
+      cor secundária - cor mais clara, contraste com a principal - fonte e outros: #eae9f2 azul -90% , #e3efe5 verde -90%
+      cor 3 - cor mais escura - fundo maior: #080f09 verde 70%
+      cor 4 - 2° cor mais escura - fundo menor: #111d13 verde 40%
+      cor 5 - 4° cor mais escura - cor de realce: #1c311f verde 0%
+      cor 6 - cor para para bordas destaques: #423b68 azul 0%, #9890c0 azul -50%, #acd0b1 verde -70%, #acd3ef azul metal -70%
+    */
+    .clear { clear: both; }
+    body { background: #080f09; } /*cor 3*/
+    .all {
+      background: #111d13; /*cor 4*/
+      width: 65%;
+      max-width: 1248px; /*65% de 1920 - largura de tela full hd*/
+      min-width: 887.9px; /*65% de 1366 - largura de tela hd*/
+      height: 90vh;
+      margin: 10vh 17.5% 0; /*17.5 x 2 = 35 - centralizar a box*/
+      box-shadow: #423b68 0 0 10px 1px; /*cor 6*/
+      border: 5px solid #111d13; /*cor 4*/
+      border-radius: 2vmin;
+      padding: 1%;
+      font: 105%/1.2 "Noto Sans", sans-serif;
+      text-align: center;
+      color: #eae9f2; /*cor secundária*/
+    }
+    main {
+      width: 80%;
+      float: right;
+    }
+    section {
+      background: #162719; /*cor principal*/
+      border: 5px solid #162719; /*cor principal*/
+      border-radius:2vmin;
+      padding: 2%
+    }
+    p {
+      text-align: start;
+      line-height: 1;
+    }
+    a {
+      text-decoration: none;
+      color: #eae9f2; /*cor secundária*/
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #author-image {
+      width: 32%;
+      max-width: 319.4px; /*manter proporção das boxes acenstrais*/
+      min-width: 227.3px;
+      float: right;
+      box-shadow: #423b68 0 0 10px 1px; /*cor 6*/
+      display: flex;
+      align-items: center;
+      border-radius: 2vmin;
+    }
+    .contact {
+      width: 62%;
+      float: left;
+      display: block;
+      align-items: center;
+    }
+    .contact a:hover {
+      background: #423b68; /*cor 5*/
+      border-radius: 1vmin;
+    }
+    .y-bar {
+      background: #423b68; /*cor 6*/
+      opacity: 0.6;
+      width: 0.1%;
+      height: 91%;
+      float: left;
+      margin: 0 1%;
+      border-radius: 2vmin;
+    }
+    .sidebar {
+      background: #162719; /*cor principal*/
+      width: 17.9%;
+      height: 91%; /*considerando o padding do da box pai*/
+      float: left;
+      border: 5px solid #162719; /*cor princpal*/
+      border-radius: 2vmin;
+      padding: 2% 0;
+      font-size: 95%;
+    }
+    .sidebar a { display: block; }
+    .assistant-sidebar { margin: 10% 0; }
+    .assistant-sidebar li { padding-bottom: 1%; }
+    .assistant-sidebar a { padding: 4% 2%; }
+    .current {
+      background: #423b68; /*cor 6*/
+      opacity: 0.6;
+      border-radius: 1vmin;
+    }
+    .assistant-sidebar a:hover {
+      background: #1c311f; /*cor 5*/
+      border-radius: 1vmin;
+      padding: 4% 2%;
+    }
+    .current:hover { color: #423b68; /*cor 6*/ }
+    .page-bottom footer {
+      background: #111d13; /*cor 4*/
+      height: 5%;
+      border-radius: 0 0 2vmin 2vmin;
+      padding: 2%;
+    }
+  </style>
 </head>
-<body class="about-me">
-  <div id="all">
+<body class="wanna-coffee">
+  <div class="all">
     <!--<header></header>-->
     <main class="main-content">
-      <section class="main-top">
-      </section>
+      <section class="main-top"></section>
+      <h1></h1>
     </main>
     <div class="sidebar">
       <nav class="assistant-sidebar">
@@ -21,7 +133,7 @@
           </li>
           -->
           <li>
-            <a href="projects.html">Meus Projetos</a>
+            <a "projects.html">Meus Projetos</a>
           </li>
           <!--
           <li>
@@ -34,7 +146,7 @@
             <a href="coffee-tips.html">Dicas sobre café</a>
           </li>
           <li>
-            <a href="wanna-coffee.html">Pague-me um café</a>
+            <a class="current" href="wanna-coffee.html">Pague-me um café</a>
           </li>
           -->
           <li>
@@ -43,6 +155,7 @@
         </ul>
       </nav>
     </div>
+    <div class="y-bar"></div>
     <div class="clear"></div>
     <div class="page-bottom">
       <footer>
