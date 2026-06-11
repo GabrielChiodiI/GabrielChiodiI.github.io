@@ -1,4 +1,12 @@
 @import "normalize.css"; /*CSS Reset por Nicolas Gallagher*/
+:root { /*Document colors*/
+  --primary-color: #162719;
+  --secondary-color: #eae9f2;
+  --color-three: #080f09;
+  --color-four: #111d13;
+  --color-five: #1c311f;
+  --color-six: #423b68;
+}
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 /* Anotações sobre cores do documento - estilo noturno
@@ -7,32 +15,32 @@ html { box-sizing: border-box; }
   cor 3 - cor mais escura - fundo maior: #080f09 verde 70%
   cor 4 - 2° cor mais escura - fundo menor: #111d13 verde 40%
   cor 5 - 4° cor mais escura - cor de realce: #1c311f verde 0%
-  cor 6 - cor para para bordas destaques: #423b68 roxo 0%, #081D2D azul 0%, golden 0%, #9890c0 roxo -50%, #acd0b1 verde -70%, #acd3ef azul metal -70%
+  cor 6 - cor para para bordas destaques: #423b68 roxo 0%, #081D2D azul 0%, #534B16 dourado 0%, #9890c0 roxo -50%, #acd0b1 verde -70%, #acd3ef azul metal -70%
 */
 .clear { clear: both; }
-body { background: #080f09; } /*cor 3*/
+body { background: var(--color-three); }
 .all {
-  background: #111d13; /*cor 4*/
+  background: var(--color-four);
   width: 65%;
   max-width: 1248px; /*65% de 1920 - largura de tela full hd*/
   min-width: 887.9px; /*65% de 1366 - largura de tela hd*/
   height: 90vh;
   margin: 10vh 17.5% 0; /*17.5 x 2 = 35 - centralizar a box*/
-  box-shadow: #423b68 0 0 10px 1px; /*cor 6*/
-  border: 5px solid #111d13; /*cor 4*/
+  box-shadow: var(--color-six) 0 0 10px 1px;
+  border: 5px solid var(--color-four);
   border-radius: 2vmin;
   padding: 1%;
   font: 105%/1.2 "Noto Sans", sans-serif;
   text-align: center;
-  color: #eae9f2; /*cor secundária*/
+  color: var(--secondary-color);
 }
 main {
   width: 80%;
   float: right;
 }
 section {
-  background: #162719; /*cor principal*/
-  border: 5px solid #162719; /*cor principal*/
+  background: var(--primary-color);
+  border: 5px solid var(--primary-color);
   border-radius:2vmin;
   padding: 2%
 }
@@ -42,7 +50,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #eae9f2; /*cor secundária*/
+  color: var(--secondary-color);
 }
 ul {
   list-style: none;
@@ -54,7 +62,7 @@ ul {
   max-width: 319.4px; /*manter proporção das boxes acenstrais*/
   min-width: 227.3px;
   float: right;
-  box-shadow: #423b68 0 0 10px 1px; /*cor 6*/
+  box-shadow: var(--color-six) 0 0 10px 3px;
   display: flex;
   align-items: center;
   border-radius: 2vmin;
@@ -65,12 +73,11 @@ ul {
   align-items: center;
 }
 .contact a:hover {
-  background: #423b68; /*cor 5*/
+  background: var(--color-six);
   border-radius: 1vmin;
 }
 .y-bar {
-  background: #423b68; /*cor 6*/
-  opacity: 0.6;
+  background: var(--color-six);
   width: 0.1%;
   height: 91%;
   float: left;
@@ -78,11 +85,11 @@ ul {
   border-radius: 2vmin;
 }
 .sidebar {
-  background: #162719; /*cor principal*/
+  background: var(--primary-color);
   width: 17.9%;
   height: 91%; /*considerando o padding do da box pai*/
   float: left;
-  border: 5px solid #162719; /*cor princpal*/
+  border: 5px solid var(--primary-color);
   border-radius: 2vmin;
   padding: 2% 0;
   font-size: 95%;
@@ -92,18 +99,17 @@ ul {
 .assistant-sidebar li { padding-bottom: 1%; }
 .assistant-sidebar a { padding: 4% 2%; }
 .current {
-  background: #423b68; /*cor 6*/
-  opacity: 0.6;
+  background: var(--color-six);
   border-radius: 1vmin;
 }
 .assistant-sidebar a:hover {
-  background: #1c311f; /*cor 5*/
+  background: var(--color-five);
   border-radius: 1vmin;
   padding: 4% 2%;
 }
-.current:hover { color: #423b68; /*cor 6*/ }
+.current:hover { color: var(--color-six); }
 .page-bottom footer {
-  background: #111d13; /*cor 4*/
+  background: var(--color-four);
   height: 5%;
   border-radius: 0 0 2vmin 2vmin;
   padding: 2%;
