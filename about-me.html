@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre mim | Gabriel Chiodi Ibanez</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="about-me">
   <div class="all">
-    <!--<header></header>-->
+    <header></header>
     <main class="main-content">
       <section class="main-top">
-        <img id="author-image" src="images/author_image1.webp" alt="Foto do autor do site.">
+      	<div class="author-image">
+          <img id="author-image" src="images/author_image1.webp" alt="Foto do autor do site.">
+          <img class="printing qr-code" src="images/qrcode_site.png" alt="QR code para acesso do site">
+          <p class="printing">Escaneie o QR code para acessar meu website!</p>
+        </div>
         <div class="contact">
           <p>Gabriel Chiodi Ibanez</p>
           <p>Email: gabrielmju@hotmail.com</p>
+          <p class="printing">Contato: 67 99823-9082</p>
           <p>GitHub: <a href="https://github.com/GabrielChiodiI" target="_blank">github.com/gabrielchiodii</a></p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-chiodi-ibanez-343b2b358" target="_blank">www.linkedin.com/in/gabriel-chiodi-ibanez-343b2b358</a></p>
           <p>Dourados - MS</p>
-          <p>Natural de Maracaju – MS, nascido em 2000 • 25 anos</p>
+          <p>Natural de Maracaju – MS, nascido em 2000</p>
         </div>
-        <div class="clear"></div>
       </section>
+      <hr class="printing">
       <section class="profile">
         <h2>Perfil Profissional</h2>
         <dl>
@@ -63,41 +68,36 @@
         <img class="certificate" src="images/certificado_sbc.webp" alt="Certificado de aluno destaque pela Sociedade Brasileira de Computação."/>
       </section>
     </main>
-    <div class="sidebar">
-      <nav class="assistant-sidebar">
-        <ul>
-          <li>
-            <a href="index.html">Início</a>
-          </li>
-          <li>
-            <a href="projects.html">Meus Projetos</a>
-          </li>
-          <!--
-          <li>
-            <a href="articles.html">Meus Artigos</a>
-          </li>
-          <li>
-            <a href="studies.html">Estudos e Leituras</a>
-          </li>
-          <li>
-            <a href="coffee-tips.html">Dicas sobre café</a>
-          </li>
-          <li>
-            <a href="wanna-coffee.html">Pague-me um café</a>
-          </li>
-          -->
-          <li>
-            <a class="current" href="about-me.html">Sobre mim</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="clear"></div>
-    <div class="page-bottom">
-      <footer>
-        <small>Site pessoal de Gabriel Chiodi Ibanez - 2026 &copy; Todos os direitos reservados</small>
-      </footer>
-    </div>
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <a href="index.html">Início</a>
+        </li>
+        <li>
+          <a href="projects.html">Meus Projetos</a>
+        </li>
+        <!--
+        <li>
+          <a href="articles.html">Meus Artigos</a>
+        </li>
+        <li>
+          <a href="studies.html">Estudos e Leituras</a>
+        </li>
+        <li>
+          <a href="coffee-tips.html">Dicas sobre café</a>
+        </li>
+        <li>
+          <a href="wanna-coffee.html">Pague-me um café</a>
+        </li>
+        -->
+        <li>
+          <a class="current" href="about-me.html">Sobre mim</a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="page-bottom">
+      <small>Site pessoal de Gabriel Chiodi Ibanez - 2026 &copy; Todos os direitos reservados</small>
+    </footer>
   </div>
 </body>
 </html>
