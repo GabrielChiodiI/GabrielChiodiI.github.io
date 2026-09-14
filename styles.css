@@ -182,6 +182,28 @@ a:hover {
   margin: 0 15% auto;
 }
 
+/*estilos da página wanna-coffee*/
+.my-support {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.support {
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: var(--color-six) 0 0 0 1px;
+}
+.support p {
+  text-align: center;
+}
+.support-cover {
+  width: 100%;
+  border-radius: 15px;
+}
+
 /*estilos da página about-me*/
 /*estilos da página about-me para impressão*/
 @media print {
@@ -253,6 +275,7 @@ img#author-image {
   align-items: flex-start;
 }
 }
+
 /*estilos da página about-me para as demais mídias*/
 .printing {
   display: none;
